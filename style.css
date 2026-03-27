@@ -120,12 +120,14 @@ summary:focus-visible,
 .button--light {
   background: var(--bg);
   color: #171b15;
-  border-radius: 13px;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 12px;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 1;
-  padding: 14px 22px;
+  white-space: nowrap;
 }
 
 .button__arrow {
@@ -172,10 +174,10 @@ summary:focus-visible,
 
 .topbar__inner {
   width: min(724px, calc(100% - 48px));
-  min-height: 72px;
+  height: 60px;
   margin: 0 auto;
-  padding: 0 24px 0 20px;
-  border-radius: 16px;
+  padding: 0 16px 0 14px;
+  border-radius: 14px;
   background: var(--green-soft);
   display: flex;
   align-items: center;
@@ -184,9 +186,18 @@ summary:focus-visible,
   pointer-events: auto;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
 .brand img {
-  width: 112px;
-  height: auto;
+  width: 104px;
+  height: 26px;
+  object-fit: contain;
+  vertical-align: top;
 }
 
 .hero-stage {
@@ -943,7 +954,7 @@ summary:focus-visible,
   }
 
   .topbar__inner {
-    min-height: auto;
+    height: auto;
     padding: 12px 14px;
     flex-direction: column;
     gap: 12px;
